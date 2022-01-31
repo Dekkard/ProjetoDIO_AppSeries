@@ -1,0 +1,15 @@
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\bin\Debug\net6.0\ProjetoDIO_AppSeries.exe
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\bin\Debug\net6.0\ProjetoDIO_AppSeries.deps.json
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\bin\Debug\net6.0\ProjetoDIO_AppSeries.runtimeconfig.json
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\bin\Debug\net6.0\ProjetoDIO_AppSeries.dll
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\bin\Debug\net6.0\ref\ProjetoDIO_AppSeries.dll
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\bin\Debug\net6.0\ProjetoDIO_AppSeries.pdb
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.csproj.AssemblyReference.cache
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.AssemblyInfoInputs.cache
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.AssemblyInfo.cs
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.csproj.CoreCompileInputs.cache
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.dll
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ref\ProjetoDIO_AppSeries.dll
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.pdb
+D:\Workspace\dotNetBootcamp\ProjetoDIO_AppSeries\obj\Debug\net6.0\ProjetoDIO_AppSeries.genruntimeconfig.cache
