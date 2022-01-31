@@ -35,7 +35,7 @@ public class Serie : EBase
         _genre = (Genre)Convert.ToInt32(Console.ReadLine());
 
         Console.Write("Digite uma breve descrição: ");
-        _title = Console.ReadLine();
+        _description = Console.ReadLine();
         
         Console.Write("Digite o ano de lançamento: ");
         _year = Convert.ToInt32(Console.ReadLine());

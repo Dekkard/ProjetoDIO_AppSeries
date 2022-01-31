@@ -3,7 +3,8 @@
     public static void Main(string[] args)
     {
         SerieController sr = new SerieController();
-        List<Serie> listSeries = sr.GetAll();
+        List<Serie> listSeries;
+        string path = Path.Combine(Environment.CurrentDirectory + "\\Lista de Séries.txt");
         Console.WriteLine("Bem-vindo ao gerenciador de séries.");
         while (true)
         {
@@ -12,14 +13,15 @@
             + "\t 2: Inserir série:\n"
             + "\t 3: Alterar série:\n"
             + "\t 4: Deletar série:\n"
-            + "\t S: Salvar lista de séries(breve): \n"
-            + "\t C: Carregar lista de séries(breve): \n"
+            + "\t S: Salvar lista de séries: \n"
+            + "\t C: Carregar lista de séries: \n"
             + "\t X: fechar gerenciador:");
             Console.Write("Digite: ");
             string opt = Console.ReadLine();
             switch (opt)
             {
                 case "1":
+                    listSeries = sr.GetAll();
                     if (listSeries.Count() == 0)
                     {
                         Console.WriteLine("Nenhuma série registrada");
@@ -53,6 +55,7 @@
                     sr.Post(s2);
                     break;
                 case "3":
+                    listSeries = sr.GetAll();
                     if (listSeries.Count() == 0)
                     {
                         Console.WriteLine("Nenhuma série registrada");
@@ -65,6 +68,7 @@
                     }
                     break;
                 case "4":
+                    listSeries = sr.GetAll();
                     if (listSeries.Count() == 0)
                     {
                         Console.WriteLine("Nenhuma série registrada");
@@ -78,9 +82,25 @@
                     break;
                 case "S":
                 case "s":
+                    var file1 = File.CreateText(path);
+                    listSeries = sr.GetAll();
+                    foreach (Serie ss in listSeries)
+                    {
+                        string pepareLine = ss.Id + ";" + ((int)ss.Genre) + ";" + ss.Title + ";" + ss.Description + ";" + ss.Year;
+                        file1.WriteLine(pepareLine);
+                    }
+                    file1.Close();
                     break;
                 case "C":
                 case "c":
+                    var file2 = File.OpenRead(path);
+                    StreamReader streamReader = new StreamReader(file2);
+                    while (!streamReader.EndOfStream)
+                    {
+                        string[] lineFields = streamReader.ReadLine().Split(";");
+                        sr.Post(new Serie(Convert.ToInt32(lineFields[0]), (Genre)int.Parse(lineFields[1]) , lineFields[2], lineFields[3], Convert.ToInt32(lineFields[4])));
+                    }
+                    file2.Close();
                     break;
                 case "X":
                 case "x":
